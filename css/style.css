@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --maincolor :#FFCC00;
+}
+a {
+    color:white
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center center ;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    position: relative;
+}
+.navbar a ,.navbar .collapse .navbar-nav  .nav-item a  {
+    color: white;
+}
+.navbar a:hover ,.navbar .collapse .navbar-nav  .nav-item a:hover  {
+    color: #FF9100;
+}
+.navbar .navbar-brand {
+    margin-right: 150px;
+}
+.button1 {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 100px;
+    margin-right: 20px;
+    padding: 3px 17px;
+    border-radius: 1px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.mainbutton  {
+    background-color: #FFcc00;
+    color: #10121C;
+
+}
+.secbutton  {
+    background-color: #313655;
+    color: #E4E8F0;
+
+}
+.active {
+    color: #FF9100;
+}
+.main {
+    position: absolute;
+    top: 200px;
+    width: 42%;
+    color: white;
+}
+.main h3:first-child  {
+    color: #FFBC00;
+}
+.main h1 {
+    font-size: 50px;
+    font-weight: 900;
+    
+}
+.button2 {
+    width: 200px;
+}
+.coin {
+    position: absolute;
+    left: -50px;
+}
+.coin img {
+    width: 80%;
+}
+.dowen{
+    position: absolute;
+    bottom: 5%;
+    right: 50%;
+    cursor: pointer;
+    animation: updowen .5s infinite ;
+    -webkit-animation: updowen 1s infinite ;
+}
+@keyframes updowen {
+    50% {  bottom: 5%;}
+    66% {  bottom: 3%;}
+  }
+@media (max-width:1024px) {
+    .main h1  {
+        font-size: 25px;
+
+    }
+    .main h3 {
+        font-size: 15px;
+    }
+    .main p:last-child {
+        font-size: 10px;
+        
+    }
+    .main button2 {
+        width: 60px;
+
+    }
+
+}
